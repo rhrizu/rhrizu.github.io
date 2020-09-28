@@ -6,6 +6,43 @@
 	<title>"Maya's lounge"</title>
 	<style>
 
+		body
+		{
+			background-color: rgba(27,31,40,.85);
+		}
+
+		.slider
+		{
+			width: 100%;
+			height: 500px;
+			background-image: url("hl.jpg");
+			background-position: center;
+			background-size: 100% 100%;
+			margin: 10px auto;
+			box-shadow: 1px 2px 10px 5px white;
+			animation: slider 90s infinite linear;
+		}
+
+
+		@keyframes slider
+		{
+			0% {
+					background: url("b.jpg");
+			  }
+
+			  25% {
+					background: url("c.jpeg");
+			  }
+
+			  50% {
+					background: url("d.jpeg");
+			  }
+
+			  75% {
+					background: url("e.jpg");
+			  }
+		}
+
 		.breakfast
 		{
 			background-image: url("breakfast.jpeg"); 
@@ -31,6 +68,14 @@
   			background-position: center;
 		}
 
+		.marquee
+		{
+			background-color: lightgreen;
+			background-position: absolute;
+			width: 100%;
+			margin-top: 10px;
+		}
+
 		a
 		{
 			text-decoration: none;
@@ -41,11 +86,15 @@
 </head>
 
 <body>
-
+	<div class="marquee">
 <marquee>
-	<h1 style= "text-align: center; font-size: 50px; color: black;"> Welcome To Maya's Lounge </h1>
+	<h1 style= "text-align: center; font-size: 50px; color:tomato; "> Welcome To Maya's Lounge </h1>
 </marquee>
+	</div>	
+</style>
 	<h2 style=" text-align: center; color:tomato; background-color: tomato; color: #333; padding: 20px; "> Fresh food calling you </h2>
+
+	<div class="slider"> </div>
 
 <div class="breakfast">
 <h1 style="text-align: center; padding-top: 30px; font-size: 100px; color: black ">
